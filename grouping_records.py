@@ -13,9 +13,21 @@ from operator import itemgetter
 from itertools import groupby
 
 # sort by the desired field first
-rows.sort(key=itemgetter('date'))
+# rows.sort(key=itemgetter('date'))
 # print(rows)
-for date, items in groupby(rows, key=itemgetter('date')):
-    print(date)
-    for i in items:
-        print('\t',i)
+# for date, items in groupby(rows, key=itemgetter('date')):
+#     print(date)
+#     for i in items:
+#         print('\t',i)
+
+# Default dict
+from collections import defaultdict
+
+rows_by_date = defaultdict(list)
+for row in rows:
+    rows_by_date[row['date']].append(row)
+
+# print(rows_by_date)
+for r in rows_by_date['07/01/2012']:
+    print(r)
+    
