@@ -21,7 +21,7 @@ class Item(object):
 
 q = PriorityQueue()
 q1 = PriorityQueue()
-print(q)
+# print(q)
 q.push(Item('foo'), 1)
 q.push(Item('oof'), 2)
 q.push(Item('bar'), 10)
