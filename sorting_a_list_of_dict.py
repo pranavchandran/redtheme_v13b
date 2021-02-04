@@ -6,17 +6,17 @@ rows = [
     {'fname': 'John', 'lname': 'Cleese', 'uid': 1001},
     {'fname': 'Big', 'lname': 'Jones', 'uid': 1004}
 ]
-# from operator import itemgetter
+from operator import itemgetter
 # import pprint
 
 # rows_by_fname = sorted(rows, key=itemgetter('fname'))
 # # print('rows by fname',rows_by_fname)
-# rows_by_uid = sorted(rows, key=itemgetter('uid'))
-# # print('rows_by_uid',rows_by_uid)
+rows_by_uid = sorted(rows, key=itemgetter('uid'))
+print('rows_by_uid',rows_by_uid)
 
 # # itemgetter() can also accept multiple keys.
-# rows_by_lfname = sorted(rows, key=itemgetter('lname', 'fname'))
-# print(rows_by_lfname)
+rows_by_lfname = sorted(rows, key=itemgetter('lname', 'fname'))
+print('rows bt lname',rows_by_lfname)
 
 
 class itemgetter_P:
