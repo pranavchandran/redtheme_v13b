@@ -6,6 +6,7 @@ rows = [
     {'fname': 'John', 'lname': 'Cleese', 'uid': 1001},
     {'fname': 'Big', 'lname': 'Jones', 'uid': 1004}
 ]
+
 from operator import itemgetter
 # import pprint
 

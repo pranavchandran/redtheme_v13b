@@ -1,6 +1,6 @@
 # you are trying to match a simple literal,you can often just use the basic string methods
 # str.find(),str.endswith,str.startswith()
-
+import re
 text = 'yeah, but no, but yeah,but no, but yeah'
 
 print(text=='yeah')
@@ -74,7 +74,7 @@ print(text1.replace('yeah', 'yep'))
 # rewriting the dates of the form
 import re
 filt_text = re.sub(r'(\d+)/(\d+)/(\d+)',r'\3-\1-\2', text)
-print(filt_text)
+print('example sub',filt_text)
 
 # if you're going to perfrm repeated situations compiling it first for better performance
 
