@@ -74,6 +74,16 @@ def get_previous_byday(dayname, start_date=None):
 
 print(get_previous_byday('Saturday'))
 
+# performing same calculation using the relativedelta() function
+# from dateutil
+
+from dateutil.rrule import *
+d = datetime.now()
+# next friday
+print(d + relativedelta(weekday=FR))
+# last Friday
+print(d + relativedelta(weekday=FR(-1)))
+
 
 
 
